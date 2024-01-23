@@ -5,17 +5,18 @@ import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
 import signal
+from matplotlib.widgets import Button
 
 
-def dark_area(frame):
+def measure_radius(frame):
     """
-    Calculate the count of dark pixels in a given frame.
+    Measure the radius based on the count of dark pixels.
 
     Args:
         frame (numpy.ndarray): Input image frame.
 
     Returns:
-        int: Count of dark pixels.
+        float: Calculated radius.
     """
     if frame is None:
         raise ValueError("Error: Frame is empty")
@@ -29,21 +30,9 @@ def dark_area(frame):
     light_pixel_count = cv2.countNonZero(thresholded_frame)
     dark_pixel_count = num_pixels - light_pixel_count
 
-    return dark_pixel_count
-
-def measure(frame):
-    """
-    Measure the radius based on the count of dark pixels.
-
-    Args:
-        frame (numpy.ndarray): Input image frame.
-
-    Returns:
-        float: Calculated radius.
-    """
-    dark_pixel_count = dark_area(frame)
     radius = round(dark_pixel_count / np.pi, 2)  # in pixels
-    return radius
+    return radius, thresholded_frame
+
 
 def create_unique_csv_filename(directory, prefix):
     """
@@ -69,18 +58,18 @@ def create_unique_csv_filename(directory, prefix):
 
     return full_path
 
-def process_live_compare(csv_filename, camera_index=0):
-    """
-    Process live video feed, measure radius, and save data to CSV.
 
-    Args:
-        csv_filename (str): Path to the CSV file to save data.
-        camera_index (int): Index of the camera to use (default is 0 for the default camera).
-    """
+def process(csv_filename, camera_index=0):
     def signal_handler(sig, frame):
-        """
-        Signal handler to handle interrupt signal (Ctrl+C).
-        """
+        nonlocal stop_processing
+        stop_processing = True
+
+    def key_handler(key):
+        nonlocal stop_processing
+        if key == ord('q'):
+            stop_processing = True
+
+    def on_quit_button_clicked(event):
         nonlocal stop_processing
         stop_processing = True
 
@@ -94,10 +83,20 @@ def process_live_compare(csv_filename, camera_index=0):
         raise ValueError("Error: Couldn't open the camera.")
 
     plt.ion()
-    _, ax = plt.subplots()
-    line_fast, = ax.plot([], [], label='Radius')
-    ax.set_title('Radius Over Time')
-    ax.legend()
+    _, (ax_all, ax_last_500) = plt.subplots(2, 1, figsize=(8, 8))
+    line_all, = ax_all.plot([], [], label='Radius (All Data)')
+    line_last_500, = ax_last_500.plot([], [], label='Radius (Last 500 Data)')
+
+    ax_all.set_title('Radius Over Time (All Data)')
+    ax_all.legend()
+
+    ax_last_500.set_title('Radius Over Time (Last 500 Data)')
+    ax_last_500.legend()
+
+    quit_button_ax = plt.axes([0.8, 0.01, 0.1, 0.05])  # [left, bottom, width, height]
+    quit_button = Button(quit_button_ax, 'Quit')
+    quit_button.on_clicked(on_quit_button_clicked)
+
     plt.show()
 
     try:
@@ -111,22 +110,36 @@ def process_live_compare(csv_filename, camera_index=0):
                 if not ret:
                     break
 
-                radius = measure(frame)
+                radius, thresholded_frame = measure_radius(frame)
                 print(f"Current Radius: {radius} pixels")
                 data[len(data)] = radius
 
-                line_fast.set_xdata(range(1, len(data) + 1))
-                line_fast.set_ydata(list(data.values()))
+                # Update data for all values
+                line_all.set_xdata(range(1, len(data) + 1))
+                line_all.set_ydata(list(data.values()))
 
-                ax.relim()
-                ax.autoscale_view()
+                # Update data for the last 500 values
+                last_500_data = list(data.values())[-500:]
+                line_last_500.set_xdata(range(1, len(last_500_data) + 1))
+                line_last_500.set_ydata(last_500_data)
+
+                # Update plot appearance
+                for ax in [ax_all, ax_last_500]:
+                    ax.relim()
+                    ax.autoscale_view()
+
                 cv2.imshow("frame", frame)
+                cv2.imshow("thresholded_frame", thresholded_frame)
                 plt.draw()
                 plt.pause(0.01)
+
+                key = cv2.waitKey(1) & 0xFF
+                key_handler(key)
 
             # Save data to CSV after the loop is done or interrupted
             for frame_num, radius in data.items():
                 writer.writerow([frame_num, radius])
+            print(f"Data saved to {csv_filename}")
 
     finally:
         cap.release()
@@ -139,6 +152,5 @@ if __name__ == "__main__":
     csv_filename = create_unique_csv_filename(csv_directory, csv_prefix)
     print(f"Using CSV file: {csv_filename}")
 
-    # Continue with the rest of your code, passing csv_filename to process_live_compare
-    process_live_compare(csv_filename)
-    print("Done") 
+    process(csv_filename)
+    print("Done")
