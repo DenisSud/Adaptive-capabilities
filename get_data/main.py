@@ -2,34 +2,22 @@ import cv2
 import os
 import numpy as np
 import csv
+import matplotlib.pyplot as plt
 from datetime import datetime
-from bokeh.plotting import figure, curdoc
-from bokeh.models import ColumnDataSource
-from bokeh.layouts import layout
-from bokeh.models.widgets import Button
+import signal
+from matplotlib.widgets import Button
 
-# Global data dictionary for radius values
-data = {'frame': [], 'radius': []}
 
-# Create Bokeh figure
-fig = figure(title="Radius Measurement", x_axis_label='Frame', y_axis_label='Radius', plot_height=400, plot_width=800)
-source = ColumnDataSource(data=dict(x=[], y=[]))
-line = fig.line('x', 'y', source=source)
-
-# Create a button to quit
-quit_button = Button(label="Quit", button_type="success")
-quit_button.on_click(lambda: curdoc().clear())
-
-# Set layout options
-layout = layout([[fig], [quit_button]])
-
-# Create a function to update the plot
-def update_plot():
-    global data
-    source.data = dict(x=data['frame'], y=data['radius'])
-
-# Function to measure radius
 def measure_radius(frame):
+    """
+    Measure the radius based on the count of dark pixels.
+
+    Args:
+        frame (numpy.ndarray): Input image frame.
+
+    Returns:
+        float: Calculated radius.
+    """
     if frame is None:
         raise ValueError("Error: Frame is empty")
 
@@ -37,20 +25,34 @@ def measure_radius(frame):
     num_pixels = height * width
 
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    _, thresholded_frame = cv2.threshold(gray_frame, 68, 255, cv2.THRESH_BINARY)
+    _, thresholded_frame = cv2.threshold(gray_frame, 35, 255, cv2.THRESH_BINARY)    
 
     light_pixel_count = cv2.countNonZero(thresholded_frame)
     dark_pixel_count = num_pixels - light_pixel_count
 
-    radius = round(dark_pixel_count / np.pi, 2)  # in pixels
-    return radius
+    cv2.imshow("frame", frame)
+    cv2.imshow("thresholded_frame", thresholded_frame)
 
-# Function to create a unique CSV filename
+    radius = round(dark_pixel_count / np.pi)  # in pixels
+    return radius, thresholded_frame
+
+
 def create_unique_csv_filename(directory, prefix):
+    """
+    Create a unique CSV filename based on the current timestamp.
+
+    Args:
+        directory (str): Directory path where the CSV file should be stored.
+        prefix (str): Prefix for the CSV file.
+
+    Returns:
+        str: Unique CSV filename.
+    """
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
     csv_filename = f"{prefix}_{timestamp}_data.csv"
     full_path = os.path.join(directory, csv_filename)
 
+    # Check if the file already exists
     counter = 1
     while os.path.exists(full_path):
         csv_filename = f"{prefix}_{timestamp}_{counter}_data.csv"
@@ -59,54 +61,96 @@ def create_unique_csv_filename(directory, prefix):
 
     return full_path
 
-# Function to process video frames
+
 def process(csv_filename, camera_index=0):
-    global data
+    def signal_handler(sig, frame):
+        nonlocal stop_processing
+        stop_processing = True
+
+    def key_handler(key):
+        nonlocal stop_processing
+        if key == ord('q'):
+            stop_processing = True
+
+    def on_quit_button_clicked(event):
+        nonlocal stop_processing
+        stop_processing = True
+
+    stop_processing = False
+    signal.signal(signal.SIGINT, signal_handler)
 
     cap = cv2.VideoCapture(camera_index)
+    data = {}
 
     if not cap.isOpened():
         raise ValueError("Error: Couldn't open the camera.")
+
+    plt.ion()
+    _, (ax_all, ax_last_500) = plt.subplots(2, 1, figsize=(8, 8))
+    line_all, = ax_all.plot([], [], label='Radius (All Data)')
+    line_last_500, = ax_last_500.plot([], [], label='Radius (Last 500 Data)')
+
+    ax_all.set_title('Radius Over Time (All Data)')
+    ax_all.legend()
+
+    ax_last_500.set_title('Radius Over Time (Last 500 Data)')
+    ax_last_500.legend()
+
+    quit_button_ax = plt.axes([0.8, 0.01, 0.1, 0.05])  # [left, bottom, width, height]
+    quit_button = Button(quit_button_ax, 'Quit')
+    quit_button.on_clicked(on_quit_button_clicked)
+
+    plt.show()
 
     try:
         with open(csv_filename, "w", newline='') as csv_file:
             writer = csv.writer(csv_file)
             writer.writerow(['Frame', 'Radius'])
 
-            frame_num = 1
-            while True:
+            while not stop_processing:
                 ret, frame = cap.read()
 
                 if not ret:
                     break
 
-                radius = measure_radius(frame)
+                radius, _ = measure_radius(frame)
                 print(f"Current Radius: {radius} pixels")
-                data['frame'].append(frame_num)
-                data['radius'].append(radius)
+                data[len(data)] = radius
 
+                # Update data for all values
+                line_all.set_xdata(range(1, len(data) + 1))
+                line_all.set_ydata(list(data.values()))
+
+                # Update data for the last 500 values
+                last_500_data = list(data.values())[-500:]
+                line_last_500.set_xdata(range(1, len(last_500_data) + 1))
+                line_last_500.set_ydata(last_500_data)
+
+                # Update plot appearance
+                for ax in [ax_all, ax_last_500]:
+                    ax.relim()
+                    ax.autoscale_view()
+
+                # cv2.imshow("frame", frame)
+                # cv2.imshow("thresholded_frame", thresholded_frame)
+                plt.draw()
+                plt.pause(0.08)
+
+            # Save data to CSV after the loop is done or interrupted
+            for frame_num, radius in data.items():
                 writer.writerow([frame_num, radius])
-
-                frame_num += 1
-
-                update_plot()
-
-                key = cv2.waitKey(1) & 0xFF
-                if key == ord('q'):
-                    break
+            print(f"Data saved to {csv_filename}")
 
     finally:
         cap.release()
         cv2.destroyAllWindows()
 
-# Main execution
 if __name__ == "__main__":
     csv_directory = "G:/Adaptive-capabilities/data/csv"
     csv_prefix = "data"
-
+    
     csv_filename = create_unique_csv_filename(csv_directory, csv_prefix)
     print(f"Using CSV file: {csv_filename}")
 
-    curdoc().add_root(layout)
-    curdoc().title = "Radius Measurement"
     process(csv_filename)
+    print("Done")
