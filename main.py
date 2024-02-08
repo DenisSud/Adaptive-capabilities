@@ -1,13 +1,12 @@
 import cv2
-import os
-import numpy as np
+import numpy
 import csv
 import matplotlib.pyplot as plt
 import signal
 from matplotlib.widgets import Button
 
 
-def measure_radius(frame):
+def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     """
     Measure the radius based on the count of dark pixels.
 
@@ -32,10 +31,10 @@ def measure_radius(frame):
     cv2.imshow("frame", frame)
     cv2.imshow("thresholded_frame", thresholded_frame)
 
-    radius = round(dark_pixel_count / np.pi)  # in pixels
+    radius = round(dark_pixel_count / numpy.pi)  # in pixels
     return radius, thresholded_frame
 
-
+    
 def process(csv_filename, camera_index=0):
     i = csv_filename.find(".")
     if i != -1:
