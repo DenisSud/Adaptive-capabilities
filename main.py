@@ -23,11 +23,7 @@ def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     num_pixels = height * width
 
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-<<<<<<< HEAD
     _, thresholded_frame = cv2.threshold(gray_frame, 12, 255, cv2.THRESH_BINARY)    
-=======
-    _, thresholded_frame = cv2.threshold(gray_frame, 35, 255, cv2.THRESH_BINARY)    
->>>>>>> cd35e03bb5c90471d060598d5543b119b7081ff3
 
     light_pixel_count = cv2.countNonZero(thresholded_frame)
     dark_pixel_count = num_pixels - light_pixel_count
@@ -40,14 +36,6 @@ def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
 
     
 def process(csv_filename, camera_index=0):
-<<<<<<< HEAD
-=======
-    i = csv_filename.find(".")
-    if i != -1:
-        csv_filename = "data/csv/" + csv_filename[:i] + ".csv"
-    else:
-        csv_filename = "data/csv/" + csv_filename
->>>>>>> cd35e03bb5c90471d060598d5543b119b7081ff3
 
     def signal_handler(sig, frame):
         nonlocal stop_processing
@@ -79,11 +67,7 @@ def process(csv_filename, camera_index=0):
 
     quit_button_ax = plt.axes([0.8, 0.01, 0.1, 0.05])  # [left, bottom, width, height]
     quit_button = Button(quit_button_ax, 'Quit')
-<<<<<<< HEAD
     quit_button.on_clicked(on_quit_button_clicked) 
-=======
-    quit_button.on_clicked(on_quit_button_clicked)
->>>>>>> cd35e03bb5c90471d060598d5543b119b7081ff3
 
     plt.show()
 
@@ -117,11 +101,7 @@ def process(csv_filename, camera_index=0):
     # Save data to CSV after the loop is done or interrupted
     print
 
-<<<<<<< HEAD
     with open(csv_filename, 'w', newline='') as file:
-=======
-    with open(csv_filename + ".csv", 'w', newline='') as file:
->>>>>>> cd35e03bb5c90471d060598d5543b119b7081ff3
         writer = csv.writer(file)
         for key, value in data.items():
             writer.writerow([key, value])
@@ -132,7 +112,6 @@ def process(csv_filename, camera_index=0):
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     csv_filename = input("enter the csv file that will be used: ")
     if csv_filename[-4:] == ".csv":
         print(f"Using CSV file: {csv_filename}")
@@ -140,12 +119,5 @@ if __name__ == "__main__":
         csv_filename += ".csv"
         print(f"Using CSV file: {csv_filename}")
 
-    process(csv_filename, camera_index=1)
+    process(csv_filename, camera_index=0)
     print("Done")
-=======
-    csv_filename = "test"#input("enter the csv file that will be used: ")
-    print(f"Using CSV file: {csv_filename}")
-
-    process(csv_filename)
-    print("Done")
->>>>>>> cd35e03bb5c90471d060598d5543b119b7081ff3
