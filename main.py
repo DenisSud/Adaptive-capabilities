@@ -48,7 +48,7 @@ def process(csv_filename, camera_index=0):
     stop_processing = False
     signal.signal(signal.SIGINT, signal_handler)
 
-    cap = cv2.VideoCapture(camera_index)
+    cap = cv2.VideoCapture(camera_index, CAP_DSHOW)
     data = {}
 
     if not cap.isOpened():
