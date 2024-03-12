@@ -23,7 +23,7 @@ def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     num_pixels = height * width
 
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    _, thresholded_frame = cv2.threshold(gray_frame, 12, 255, cv2.THRESH_BINARY)    
+    _, thresholded_frame = cv2.threshold(gray_frame, 16, 255, cv2.THRESH_BINARY)    
 
     light_pixel_count = cv2.countNonZero(thresholded_frame)
     dark_pixel_count = num_pixels - light_pixel_count
