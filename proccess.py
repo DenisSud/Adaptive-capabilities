@@ -3,7 +3,6 @@ import csv
 import json
 import numpy as np
 
-
 data_folder = 'pupil_data/'
 results = []
 

@@ -6,6 +6,7 @@ import signal
 from matplotlib.widgets import Button
 
 
+
 def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     """
     Measure the radius based on the count of dark pixels.
@@ -23,7 +24,7 @@ def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     num_pixels = height * width
 
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    _, thresholded_frame = cv2.threshold(gray_frame, 16, 255, cv2.THRESH_BINARY)    
+    _, thresholded_frame = cv2.threshold(gray_frame, 15, 255, cv2.THRESH_BINARY)    
 
     light_pixel_count = cv2.countNonZero(thresholded_frame)
     dark_pixel_count = num_pixels - light_pixel_count
@@ -120,4 +121,4 @@ if __name__ == "__main__":
         print(f"Using CSV file: {csv_filename}")
 
     process(csv_filename, camera_index=0)
-    print("Done")
+    print(f"Program finished!")
