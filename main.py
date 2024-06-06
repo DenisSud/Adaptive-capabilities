@@ -24,13 +24,13 @@ def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     num_pixels = height * width
 
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    _, thresholded_frame = cv2.threshold(gray_frame, 15, 255, cv2.THRESH_BINARY)    
+    _, thresholded_frame = cv2.threshold(gray_frame, 23, 255, cv2.THRESH_BINARY)    
 
     light_pixel_count = cv2.countNonZero(thresholded_frame)
     dark_pixel_count = num_pixels - light_pixel_count
 
-    cv2.imshow("frame", frame)
-    cv2.imshow("thresholded_frame", thresholded_frame)
+    # cv2.imshow("frame", frame)
+    # cv2.imshow("thresholded_frame", thresholded_frame)
 
     radius = round(dark_pixel_count / numpy.pi)  # in pixels
     return radius, thresholded_frame
@@ -38,6 +38,8 @@ def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     
 def process(csv_filename, camera_index=0):
 
+    csv_filename = "./pupil_data/" + csv_filename 
+    
     def signal_handler(sig, frame):
         nonlocal stop_processing
         stop_processing = True
@@ -120,5 +122,5 @@ if __name__ == "__main__":
         csv_filename += ".csv"
         print(f"Using CSV file: {csv_filename}")
 
-    process(csv_filename, camera_index=0)
+    process(csv_filename, camera_index=1)
     print(f"Program finished!")
