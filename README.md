@@ -19,12 +19,12 @@ This project uses OpenCV to measure the radius of an object based on the count o
 
 3. Build the Docker image:
    ```bash
-   docker build -t adaptive-capabilitie .
+   docker build -t adaptive-capabilities .
    ```
 
 4. Run the Docker container:
    ```bash
-   docker run -it --rm -v /dev/video0:/dev/video0 --privileged adaptive-capabilitie
+   docker run -it --rm -v /dev/video0:/dev/video0 --privileged adaptive-capabilities
    ```
    - `-it`: Runs the container in interactive mode.
    - `--rm`: Automatically removes the container when it exits.

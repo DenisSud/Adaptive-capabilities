@@ -1,18 +1,17 @@
 import cv2
-import numpy
+import numpy as np
 import csv
 import matplotlib.pyplot as plt
 import signal
+import time
 from matplotlib.widgets import Button
 
-
-
-def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
+def measure_radius(frame: np.ndarray) -> tuple[float, np.ndarray]:
     """
     Measure the radius based on the count of dark pixels.
 
     Args:
-        frame (numpy.ndarray): Input image frame.
+        frame (np.ndarray): Input image frame.
 
     Returns:
         float: Calculated radius.
@@ -32,12 +31,10 @@ def measure_radius(frame: numpy.ndarray) -> tuple[float, numpy.ndarray]:
     cv2.imshow("frame", frame)
     cv2.imshow("thresholded_frame", thresholded_frame)
 
-    radius = round(dark_pixel_count / numpy.pi)  # in pixels
+    radius = round(dark_pixel_count / np.pi)  # in pixels
     return radius, thresholded_frame
 
-    
 def process(csv_filename, camera_index=0):
-
     def signal_handler(sig, frame):
         nonlocal stop_processing
         stop_processing = True
@@ -72,7 +69,12 @@ def process(csv_filename, camera_index=0):
 
     plt.show()
 
+    start_time = time.time()
     while not stop_processing:
+        current_time = time.time() - start_time
+        if current_time >= 180:  # 3 minutes in seconds
+            break
+
         ret, frame = cap.read()
 
         if not ret:
@@ -97,10 +99,10 @@ def process(csv_filename, camera_index=0):
             ax.autoscale_view()
 
         plt.draw()
-        plt.pause(0.1)
+        plt.pause(0.08)
 
     # Save data to CSV after the loop is done or interrupted
-    print
+    print()
 
     with open(csv_filename, 'w', newline='') as file:
         writer = csv.writer(file)
@@ -110,7 +112,6 @@ def process(csv_filename, camera_index=0):
 
     cap.release()
     cv2.destroyAllWindows()
-
 
 if __name__ == "__main__":
     csv_filename = input("enter the csv file that will be used: ")

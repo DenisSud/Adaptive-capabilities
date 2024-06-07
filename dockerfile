@@ -7,5 +7,5 @@ RUN apt-get update && \
 WORKDIR /app
 COPY . /app
 
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
 
