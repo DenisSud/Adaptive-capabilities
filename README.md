@@ -9,22 +9,22 @@ This project uses OpenCV to measure the radius of an object based on the count o
 ### Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/opencv-radius-measurement.git
+   git clone https://github.com/denissud/adaptive-capabilities.git
    ```
 
 2. Change to the project directory:
    ```bash
-   cd opencv-radius-measurement
+   cd adaptive-capabilities
    ```
 
 3. Build the Docker image:
    ```bash
-   docker build -t my-opencv-image .
+   docker build -t adaptive-capabilitie .
    ```
 
 4. Run the Docker container:
    ```bash
-   docker run -it --rm -v /dev/video0:/dev/video0 --privileged my-opencv-image
+   docker run -it --rm -v /dev/video0:/dev/video0 --privileged adaptive-capabilitie
    ```
    - `-it`: Runs the container in interactive mode.
    - `--rm`: Automatically removes the container when it exits.
