@@ -35,6 +35,13 @@ This project uses OpenCV to measure the radius of an object based on the count o
 
 The Docker container will run the Python script, access the webcam, measure the radius, and save the data to the specified CSV file. The script will also display the radius over time using Matplotlib.
 
+### Entering the Docker Container Shell
+To enter the Docker container shell, you can use the following command:
+
+```bash
+docker exec -it adaptive-capabilities bash
+```
+
 ### File Structure
 ```
 .

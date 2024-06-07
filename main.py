@@ -1,4 +1,3 @@
-
 import cv2
 import numpy
 import csv
@@ -98,7 +97,7 @@ def process(csv_filename, camera_index=0):
             ax.autoscale_view()
 
         plt.draw()
-        plt.pause(0.08)
+        plt.pause(0.1)
 
     # Save data to CSV after the loop is done or interrupted
     print
