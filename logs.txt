@@ -1,0 +1,620 @@
+   Compiling opencv v0.88.9
+error: failed to run custom build command for `opencv v0.88.9`
+
+Caused by:
+  process didn't exit successfully: `/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=OPENCV4_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=OPENCV4_STATIC
+  cargo:rerun-if-env-changed=OPENCV4_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=SYSROOT
+  cargo:rerun-if-env-changed=OPENCV4_STATIC
+  cargo:rerun-if-env-changed=OPENCV4_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=OPENCV4_STATIC
+  cargo:rerun-if-env-changed=OPENCV4_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+  cargo:rustc-cfg=ocvrs_opencv_branch_4
+  cargo:rerun-if-env-changed=OPENCV_PACKAGE_NAME
+  cargo:rerun-if-env-changed=OPENCV_PKGCONFIG_NAME
+  cargo:rerun-if-env-changed=OPENCV_CMAKE_NAME
+  cargo:rerun-if-env-changed=OPENCV_CMAKE_BIN
+  cargo:rerun-if-env-changed=OPENCV_VCPKG_NAME
+  cargo:rerun-if-env-changed=OPENCV_LINK_LIBS
+  cargo:rerun-if-env-changed=OPENCV_LINK_PATHS
+  cargo:rerun-if-env-changed=OPENCV_INCLUDE_PATHS
+  cargo:rerun-if-env-changed=OPENCV_DISABLE_PROBES
+  cargo:rerun-if-env-changed=OPENCV_MSVC_CRT
+  cargo:rerun-if-env-changed=CMAKE_PREFIX_PATH
+  cargo:rerun-if-env-changed=OpenCV_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=VCPKG_ROOT
+  cargo:rerun-if-env-changed=VCPKGRS_DYNAMIC
+  cargo:rerun-if-env-changed=VCPKGRS_TRIPLET
+  cargo:rerun-if-env-changed=OCVRS_DOCS_GENERATE_DIR
+  cargo:rerun-if-env-changed=DOCS_RS
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/core.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/alphamat.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ccalib.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/bioinspired.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/xfeatures2d.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/aruco.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/manual-core.cpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/photo.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/dnn.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/sfm.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/hdf.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/gapi.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/face.hpp
+  cargo:rerun-if-changed=/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/videoio.hpp
+  cargo:rerun-if-changed=Cargo.toml
+
+  --- stderr
+  === Crate version: Some("0.88.9")
+  === Environment configuration:
+  ===   OPENCV_PACKAGE_NAME = None
+  ===   OPENCV_PKGCONFIG_NAME = None
+  ===   OPENCV_CMAKE_NAME = None
+  ===   OPENCV_CMAKE_BIN = None
+  ===   OPENCV_VCPKG_NAME = None
+  ===   OPENCV_LINK_LIBS = Some("opencv_core,opencv_imgproc,opencv_imgcodecs")
+  ===   OPENCV_LINK_PATHS = Some("/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/lib")
+  ===   OPENCV_INCLUDE_PATHS = None
+  ===   OPENCV_DISABLE_PROBES = None
+  ===   OPENCV_MSVC_CRT = None
+  ===   CMAKE_PREFIX_PATH = None
+  ===   OpenCV_DIR = None
+  ===   PKG_CONFIG_PATH = Some("/nix/store/dp6821c0s4bbmmws3lc6nicz09lnjlgl-openssl-3.0.14-dev/lib/pkgconfig:/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/lib/pkgconfig")
+  ===   VCPKG_ROOT = None
+  ===   VCPKGRS_DYNAMIC = None
+  ===   VCPKGRS_TRIPLET = None
+  ===   OCVRS_DOCS_GENERATE_DIR = None
+  ===   DOCS_RS = None
+  ===   PATH = Some("/nix/store/kp2j7yn0wzwq5piy494r54dafrh83s6s-gcc-wrapper-13.3.0/bin:/nix/store/3s3rjkl3mx05wp0lmxgwkaqhbz9sy6kk-gcc-13.3.0/bin:/nix/store/qdrb3l3858yywwvqyq3r67jivklc15nl-glibc-2.39-52-bin/bin:/nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5/bin:/nix/store/9rz99vibv1782dxjkwvxr29s7f2f86wl-binutils-wrapper-2.42/bin:/nix/store/2p1sq1nr09xr3xb1a9lrjgdanvk1aakb-binutils-2.42/bin:/nix/store/mbxayhkqi6nwh377cvv7y1jxcc3iyz9n-rust-default-1.79.0/bin:/nix/store/ppfzl2wqzs7ljfj0dxypcvrhr9x6ka3f-openssl-3.0.14-bin/bin:/nix/store/d7gxj7i9zr04mgf819k34vm5dzxgxjzn-pkg-config-wrapper-0.29.2/bin:/nix/store/m6zjxn9nrg5v01w8g9k0243xq61zl8kb-cargo-deny-0.14.24/bin:/nix/store/x2w43v2q3z06b00j6656s7zhwj5sqkcc-cargo-edit-0.12.2/bin:/nix/store/agwqdh7rrwx3q6hcl6m5879h01rgjd6j-cargo-watch-8.5.2/bin:/nix/store/zalsjjlr998k3gb0plp4jimigg1yw7i0-rust-analyzer-2024-07-15/bin:/nix/store/l5bd6z459sdpa6wrscp3607jkvs13kp7-clang-17.0.6-dev/bin:/nix/store/c0za00cgiclxd41cz72qlxvw845hgp4f-clang-17.0.6/bin:/nix/store/jbm7b0gdxrjbbyh8rvkfp7xdm0s4saaj-clang-wrapper-17.0.6/bin:/nix/store/b0cwb2x7pps3mz8q3g48lmwwk757j3z9-binutils-wrapper-2.42/bin:/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/bin:/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/bin:/nix/store/299df1ywjqqn03kbq33fffqj37idq7g1-compiler-rt-libc-17.0.6/bin:/nix/store/j71whmq49hfcvhpn4wqzrqcnbq5mafic-findutils-4.10.0/bin:/nix/store/8ynk6xvczjnjv81bfghkjwrap0hn6qah-diffutils-3.10/bin:/nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9/bin:/nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11/bin:/nix/store/a5rvjq2ir4d1wnxwdf4a9zf6hfc6ydsx-gawk-5.2.2/bin:/nix/store/0a0khkw34v25q8k6p44ma1rqa479r1za-gnutar-1.35/bin:/nix/store/aw1kk0gvw7j4vmjxhha2fj2jfsvgrd1p-gzip-1.13/bin:/nix/store/wr6x94hzs5ggmpql0qx5j8q2rpfrhm7q-bzip2-1.0.8-bin/bin:/nix/store/m9288777y854d5k0xkxgacc8rslrhb8r-gnumake-4.4.1/bin:/nix/store/m101dg80ngyjdb02g6jwy80sr7kzj26g-bash-5.2p26/bin:/nix/store/32yyy66vqi5ijh2nfas2nc83sw7qbgn1-patch-2.7.6/bin:/nix/store/0rlbqq6p9wwb7wbn5vnpck40c76czid3-xz-5.6.2-bin/bin:/nix/store/mhk0cm9nrjs855aq1vcivra9z9g9hn44-file-5.45/bin:/run/wrappers/bin:/home/denis/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/home/denis/.nix-profile/bin:/nix/profile/bin:/home/denis/.local/state/nix/profile/bin:/etc/profiles/per-user/denis/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin")
+  === Enabled features:
+  ===   ALPHAMAT
+  ===   ARUCO
+  ===   ARUCO_DETECTOR
+  ===   BARCODE
+  ===   BGSEGM
+  ===   BIOINSPIRED
+  ===   CALIB3D
+  ===   CCALIB
+  ===   CUDAARITHM
+  ===   CUDABGSEGM
+  ===   CUDACODEC
+  ===   CUDAFEATURES2D
+  ===   CUDAFILTERS
+  ===   CUDAIMGPROC
+  ===   CUDAOBJDETECT
+  ===   CUDAOPTFLOW
+  ===   CUDASTEREO
+  ===   CUDAWARPING
+  ===   CVV
+  ===   DEFAULT
+  ===   DNN
+  ===   DNN_SUPERRES
+  ===   DPM
+  ===   FACE
+  ===   FEATURES2D
+  ===   FLANN
+  ===   FREETYPE
+  ===   FUZZY
+  ===   GAPI
+  ===   HDF
+  ===   HFS
+  ===   HIGHGUI
+  ===   IMGCODECS
+  ===   IMGPROC
+  ===   IMG_HASH
+  ===   INTENSITY_TRANSFORM
+  ===   LINE_DESCRIPTOR
+  ===   MCC
+  ===   ML
+  ===   OBJDETECT
+  ===   OPTFLOW
+  ===   OVIS
+  ===   PHASE_UNWRAPPING
+  ===   PHOTO
+  ===   PLOT
+  ===   QUALITY
+  ===   RAPID
+  ===   RGBD
+  ===   SALIENCY
+  ===   SFM
+  ===   SHAPE
+  ===   STEREO
+  ===   STITCHING
+  ===   STRUCTURED_LIGHT
+  ===   SUPERRES
+  ===   SURFACE_MATCHING
+  ===   TEXT
+  ===   TRACKING
+  ===   VIDEO
+  ===   VIDEOIO
+  ===   VIDEOSTAB
+  ===   VIZ
+  ===   WECHAT_QRCODE
+  ===   XFEATURES2D
+  ===   XIMGPROC
+  ===   XOBJDETECT
+  ===   XPHOTO
+  === Detected probe priority based on environment vars: pkg_config: true, cmake: false, vcpkg: false
+  === Probing the OpenCV library in the following order: environment, pkg_config, cmake, vcpkg_cmake, vcpkg
+  === Can't probe using: environment, continuing with other methods because: Some environment variables are missing
+  === Probing OpenCV library using pkg_config
+  === Successfully probed using: pkg_config
+  === OpenCV library configuration: Library {
+      include_paths: [
+          "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4",
+      ],
+      version: Version {
+          major: 4,
+          minor: 9,
+          patch: 0,
+      },
+      cargo_metadata: [
+          "cargo:rustc-link-search=/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/lib",
+          "cargo:rustc-link-lib=opencv_core",
+          "cargo:rustc-link-lib=opencv_imgproc",
+          "cargo:rustc-link-lib=opencv_imgcodecs",
+      ],
+  }
+  === Detected OpenCV module header dir at: /nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4/opencv2
+  === Found OpenCV version: 4.9.0 in headers located at: /nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4
+  === Generating code in: /home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out
+  === Placing generated bindings into: /home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out/opencv
+  === Using OpenCV headers from: /nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4
+  === Clang: clang version 17.0.6
+  === Clang command line args: [
+      "-I/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4",
+      "-F/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4",
+      "-I/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp",
+      "-F/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp",
+      "-DOCVRS_PARSING_HEADERS",
+      "-includeocvrs_common.hpp",
+      "-std=c++14",
+  ]
+  === Using environment job server with the the amount of available jobs: 16
+  === Generating 50 modules
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "alphamat" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "aruco" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "bgsegm" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "bioinspired" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "calib3d" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "ccalib" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "core" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "dnn" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "dnn_superres" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "dpm" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "face" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "features2d" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "flann" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "fuzzy" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "gapi" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "hdf" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread 'thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: fuzzy
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  <unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: bioinspired
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "hfs" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "highgui" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: alphamat
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "img_hash" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:thread '402:<unnamed>17' panicked at :
+  /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs=== Errors during header parsing:
+  109note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  :33:
+  Failed to run the bindings generator for module: dpm
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "imgcodecs" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: hdf
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "imgproc" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: aruco
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "intensity_transform" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: bgsegm
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "line_descriptor" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: face
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: core
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "ml" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "mcc" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: calib3d
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "objdetect" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: features2d
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "optflow" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: dnn_superres
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "phase_unwrapping" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: flann
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "photo" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: dnn
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "plot" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: ccalib
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "quality" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: gapi
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "rapid" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: hfs
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "rgbd" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: img_hash
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "saliency" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: intensity_transform
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "shape" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: imgcodecs
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "stereo" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: highgui
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "stitching" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: imgproc
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "structured_light" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: mcc
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "superres" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: optflow
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "surface_matching" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: plot
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "text" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: ml
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: phase_unwrapping
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "tracking" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "video" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: objdetect
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "videoio" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: line_descriptor
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "videostab" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: photo
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "wechat_qrcode" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: quality
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "xfeatures2d" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: rapid
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "ximgproc" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: stereo
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "xobjdetect" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: shape
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:118:36:
+  Generator process panicked: Any { .. }
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "xphoto" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: saliency
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: text
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: rgbd
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: superres
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: videoio
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: tracking
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: surface_matching
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: wechat_qrcode
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: video
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: stitching
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: xfeatures2d
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: structured_light
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: videostab
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: ximgproc
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: xobjdetect
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: xphoto

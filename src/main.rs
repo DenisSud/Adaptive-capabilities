@@ -46,7 +46,6 @@ struct FindPupilEllipseOut {
 }
 
 // Main algorithm
-
 fn find_pupil_ellipse(image: &Mat, params: &TrackerParams) -> opencv::Result<FindPupilEllipseOut> {
     let start_time = Instant::now();
 
