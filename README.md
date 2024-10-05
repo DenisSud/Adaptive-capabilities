@@ -18,12 +18,16 @@ This project implements a pupil detection algorithm using computer vision techni
 - OpenCV 4.5.0 or later
 - Cargo (Rust's package manager)
 
+Alternatively, you can use Docker to set up the development environment (see Docker Setup below).
+
 ## Dependencies
 
 - opencv = "^0.93.0"
 - rand = "^0.8.5"
 
 ## Installation
+
+### Local Setup
 
 1. Clone the repository:
    ```
@@ -36,6 +40,22 @@ This project implements a pupil detection algorithm using computer vision techni
    cargo build --release
    ```
 
+### Docker Setup
+
+A Dockerfile is provided for setting up a consistent development environment:
+
+1. Build the Docker image:
+   ```
+   docker build -t pupil-detection .
+   ```
+
+2. Run a container from the image:
+   ```
+   docker run -it --rm -v $(pwd):/app pupil-detection
+   ```
+
+This will start a shell in the container with all necessary dependencies installed.
+
 ## Usage
 
 1. Place an image file named `eye.jpg` in the project root directory.
@@ -43,6 +63,7 @@ This project implements a pupil detection algorithm using computer vision techni
    ```
    cargo run --release
    ```
+   (If using Docker, run this command inside the container)
 3. The program will process the image and output the results, including:
    - Whether a pupil was detected
    - The processing time
@@ -56,6 +77,29 @@ You can modify the `TrackerParams` struct in the code to adjust various paramete
 - Canny edge detection thresholds
 - Number of starburst points
 - Number of RANSAC iterations
+
+## Development with Docker
+
+The provided Dockerfile sets up a development environment with:
+
+- Rust 1.70
+- Latest CMake
+- OpenCV dependencies
+- Rust components: rustfmt, clippy, and rust-src
+
+To use the Docker environment for development:
+
+1. Build the image as described in the Docker Setup section.
+2. Run a container, mounting your project directory:
+   ```
+   docker run -it --rm -v $(pwd):/app pupil-detection
+   ```
+3. Inside the container, you can use Cargo commands as usual:
+   ```
+   cargo build
+   cargo run
+   cargo test
+   ```
 
 ## Contributing
 
