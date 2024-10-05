@@ -46,25 +46,37 @@
             cargo-watch
             rust-analyzer
 
-            # Add these packages
+            # C++ development tools
+            gcc
+            gdb
+            cmake
+            gnumake
+
             llvmPackages.libclang
             llvmPackages.clang
-            opencv
           ];
 
           buildInputs = with pkgs; [
-            # Add any additional build inputs here
+            opencv
+            pkg-config
+            gcc
+            clang
+            libclang
+            glibc.dev
           ];
 
           env = {
+            CPLUS_INCLUDE_PATH = "${pkgs.gcc-unwrapped}/include/c++/${pkgs.gcc-unwrapped.version}:${pkgs.gcc-unwrapped}/include/c++/${pkgs.gcc-unwrapped.version}/${pkgs.stdenv.targetPlatform.config}:${pkgs.glibc.dev}/include";
             RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
-            LIBCLANG_PATH = "${pkgs.llvmPackages.libclang.lib}/lib";
+            LIBCLANG_PATH = "${pkgs.libclang.lib}/lib";
             OPENCV_LINK_LIBS = "opencv_core,opencv_imgproc,opencv_imgcodecs";
             OPENCV_LINK_PATHS = "${pkgs.opencv}/lib";
+            RUST_BACKTRACE = 1;
           };
 
           shellHook = ''
             export PATH=$PATH:${pkgs.opencv}/bin
+            export CPATH="${pkgs.glibc.dev}/include:${pkgs.clang.cc}/include:$CPATH"
           '';
         };
       });

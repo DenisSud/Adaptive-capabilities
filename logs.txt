@@ -1,5 +1,6 @@
    Compiling opencv v0.88.9
 error: failed to run custom build command for `opencv v0.88.9`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
 
 Caused by:
   process didn't exit successfully: `/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build` (exit status: 101)
@@ -215,406 +216,1375 @@ Caused by:
   ]
   === Using environment job server with the the amount of available jobs: 16
   === Generating 50 modules
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "bgsegm" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "alphamat" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "aruco" ""
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "bgsegm" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "bioinspired" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "calib3d" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "ccalib" ""
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "core" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "dnn" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "dnn_superres" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "core" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "dpm" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "face" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "fuzzy" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "hdf" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "features2d" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "flann" ""
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "fuzzy" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "gapi" ""
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "hdf" ""
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found=== WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+  === WARNING: 1 diagnostic messages
+  ===                 at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread '/rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+  main   1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+  ' panicked at    2: opencv_binding_generator::generator::Generator::handle_diags
+  /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs   3: opencv_binding_generator::generator::Generator::pre_process
+   :402:17:
+  === Errors during header parsing
+  stack backtrace:
+    4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5=== WARNING: 
+   1 diagnostic messages
+  ===     /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread ' 1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+  main   2: opencv_binding_generator::generator::Generator::handle_diags
+  ' panicked at    3: opencv_binding_generator::generator::Generator::pre_process
+   /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+    4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402: 17:
+  === Errors during header parsing
+  stack backtrace:
+    0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+    === WARNING: 1 diagnostic messages
+  ===     /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread '3: opencv_binding_generator::generator::Generator::pre_process
+   main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+    4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  thread 'thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: fuzzy
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  <unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: bioinspired
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "hfs" ""
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "highgui" ""
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: alphamat
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "img_hash" ""
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:thread '402:<unnamed>17' panicked at :
-  /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs=== Errors during header parsing:
-  109note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  :33:
-  Failed to run the bindings generator for module: dpm
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "imgcodecs" ""
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: hdf
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "imgproc" ""
+  stack backtrace:
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: features2d
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: aruco
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "intensity_transform" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: bgsegm
+  Failed to run the bindings generator for module: dnn_superres
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: alphamat
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  stack backtrace:
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out"   " hfs0":  rust_begin_unwind"
+  "             at 
+  /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4"stack backtrace:
+   "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "highgui" ""
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "img_hash" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "imgcodecs" ""
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "imgproc" ""
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: dpm
+  stack backtrace:
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: fuzzy
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::=== Running: BindingGenerator::"run::/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build"{ {"closure/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4}"} ::"{/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp{"closure }"}/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out::"{ {"closureintensity_transform}"} "
+  "
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "line_descriptor" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: face
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: core
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "ml" ""
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "mcc" ""
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: calib3d
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "objdetect" ""
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: features2d
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "optflow" ""
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: dnn_superres
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "phase_unwrapping" ""
+  Failed to run the bindings generator for module: bioinspired
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "ml" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: flann
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "photo" ""
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "objdetect" ""
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: dnn
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "plot" ""
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "optflow" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: core
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "phase_unwrapping" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: calib3d
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "photo" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: ccalib
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "quality" ""
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "plot" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: gapi
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "quality" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: bgsegm
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "rapid" ""
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0:    0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+  rust_begin_unwind   1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+
+                at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     2 :  1opencv_binding_generator: ::generatorcore::::Generatorpanicking::::handle_diagspanic_fmt
+
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     3: opencv_binding_generator:: generator :: Generator2::: pre_processopencv_binding_generator
+  ::generator::Generator::handle_diags
+     4: opencv_binding_generator::generator::Generator::generate 
+    3 :  opencv_binding_generator ::5generator: ::build_script_buildGenerator::binding_generator::::pre_processrun
+
+     6 :  build_script_build ::4binding_generator: ::opencv_binding_generatorhandle_running_binding_generator::
+  generator::Generator :: generate 
+  7: build_script_build:: main 
+   5: build_script_build::binding_generator:: run 
+   8: core :: ops ::6function: ::build_script_buildFnOnce::::binding_generatorcall_once::
+  handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing=== WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  stack backtrace:
+
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0:    0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+  rust_begin_unwind   1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+
+     2: opencv_binding_generator::generator::Generator::handle_diags
+               at    3: opencv_binding_generator::generator::Generator::pre_process
+   /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+      1: core 4: opencv_binding_generator::generator::Generator::generate
+   ::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+      2: opencv_binding_generator::generator::Generator::handle_diags
+      3: opencv_binding_generator::generator::Generator::pre_process
+   5: build_script_build::binding_generator::run
+       46: : build_script_buildopencv_binding_generator::::binding_generatorgenerator::::handle_running_binding_generatorGenerator
+  ::generate
+     7 :  build_script_build ::5main: 
+  build_script_build::binding_generator::run
+      8 :  core6::: ops::build_script_buildfunction::::binding_generatorFnOnce::::handle_running_binding_generatorcall_once
+
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:   0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+  652   1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+  :   2: opencv_binding_generator::generator::Generator::handle_diags
+  5   3: opencv_binding_generator::generator::Generator::pre_process
+
+     4: opencv_binding_generator::generator::Generator::generate
+      5: build_script_build::binding_generator::run
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+      2: opencv_binding_generator::generator::Generator::handle_diags
+      3: opencv_binding_generator::generator::Generator::pre_process
+   6: build_script_build::binding_generator::handle_running_binding_generator
+     4: opencv_binding_generator::generator::Generator::generate
+     7: build_script_build::main
+      8: core::ops::function::FnOnce::call_once
+   5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: hfs
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "rgbd" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: img_hash
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "saliency" ""
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: intensity_transform
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "shape" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: imgcodecs
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{thread '{<unnamed>closure' panicked at }/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs}:
+  109:33:
+  Failed to run the bindings generator for module: highgui
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "shape" ""
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "stereo" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: highgui
+  Failed to run the bindings generator for module: intensity_transform
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "stitching" ""
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: imgproc
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "structured_light" ""
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: mcc
+  Failed to run the bindings generator for module: imgproc
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "structured_light" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: line_descriptor
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "superres" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: optflow
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "surface_matching" ""
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: plot
+  Failed to run the bindings generator for module: mcc
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "text" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: ml
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "=== WARNING: tracking" ""
+  1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: phase_unwrapping
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "tracking" ""
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "video" ""
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: objdetect
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "videoio" ""
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: line_descriptor
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "videostab" ""
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: photo
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "wechat_qrcode" ""
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "videoio" ""
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: plot
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "videostab" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: quality
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "wechat_qrcode" ""
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: objdetect
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "xfeatures2d" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: rapid
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "ximgproc" ""
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+        0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+  5   1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+  :    2: opencv_binding_generator::generator::Generator::handle_diags
+  build_script_build   3: opencv_binding_generator::generator::Generator::pre_process
+   ::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+       47: : opencv_binding_generatorbuild_script_build::::generatormain::
+  Generator::generate
+       5 : 8build_script_build: ::corebinding_generator::::opsrun::
+  function::FnOnce :: call_once 
+  6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+      4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     1: core  6: build_script_build::binding_generator::handle_running_binding_generator
+   ::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     7: build_script_build::main
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     8: core::ops::function::FnOnce::call_once
+    3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+    note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+   8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::   0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+  Generator   1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+  ::   2: opencv_binding_generator::generator::Generator::handle_diags
+  generate   3: opencv_binding_generator::generator::Generator::pre_process
+   
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     4: opencv_binding_generator::generator::Generator::generate
+     7: build_script_build::main
+      8: core::ops::function::FnOnce::call_once
+   5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: stereo
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "xobjdetect" ""
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: shape
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:118:36:
-  Generator process panicked: Any { .. }
-  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "xphoto" ""
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: saliency
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: text
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: rgbd
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:118:36:
+  Generator process panicked: Any { .. }
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: core::result::unwrap_failed
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/result.rs:1654:5
+     3: core::result::Result<T,E>::expect
+     4: build_script_build::generator::BindingGenerator::run::{{closure}}
+     5: std::thread::scoped::scope::{{closure}}
+     6: <core::panic::unwind_safe::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
+     7: std::panicking::try::do_call
+     8: __rust_try
+     9: std::panicking::try
+    10: std::thread::scoped::scope
+    11: build_script_build::generator::BindingGenerator::run
+    12: build_script_build::generator::BindingGenerator::generate_wrapper
+    13: build_script_build::main
+    14: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === Running: "/home/denis/Code/pupil/target/debug/build/opencv-739c974a78f0c29d/build-script-build" "/nix/store/k45f88wv21102cma03c9kkmzr0fvcqjs-opencv-4.9.0/include/opencv4" "/home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp" "/home/denis/Code/pupil/target/debug/build/opencv-30a68d04ba2eee6f/out" "xphoto" ""
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: superres
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: videoio
-  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: tracking
+  Failed to run the bindings generator for module: shape
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: surface_matching
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: wechat_qrcode
-  === WARNING: 1 diagnostic messages
-  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
-  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
-  === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  Failed to run the bindings generator for module: superres
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: rgbd
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: video
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: videoio
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: stitching
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
-  Failed to run the bindings generator for module: xfeatures2d
+  Failed to run the bindings generator for module: text
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: tracking
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: structured_light
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: wechat_qrcode
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: videostab
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
+  Failed to run the bindings generator for module: xfeatures2d
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+  === WARNING: 1 diagnostic messages
+  ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
+  thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
+  === Errors during header parsing
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: ximgproc
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   === WARNING: 1 diagnostic messages
   ===    /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/src_cpp/ocvrs_common.hpp:16:10: fatal error: 'memory' file not found
   thread 'main' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-binding-generator-0.84.0/src/generator.rs:402:17:
   === Errors during header parsing
-  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: opencv_binding_generator::generator::Generator::handle_diags
+     3: opencv_binding_generator::generator::Generator::pre_process
+     4: opencv_binding_generator::generator::Generator::generate
+     5: build_script_build::binding_generator::run
+     6: build_script_build::binding_generator::handle_running_binding_generator
+     7: build_script_build::main
+     8: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: xobjdetect
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
   thread '<unnamed>' panicked at /home/denis/.cargo/registry/src/index.crates.io-6f17d22bba15001f/opencv-0.88.9/build/generator.rs:109:33:
   Failed to run the bindings generator for module: xphoto
+  stack backtrace:
+     0: rust_begin_unwind
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/std/src/panicking.rs:652:5
+     1: core::panicking::panic_fmt
+               at /rustc/129f3b9964af4d4a709d1383930ade12dfe7c081/library/core/src/panicking.rs:72:14
+     2: build_script_build::generator::BindingGenerator::run::{{closure}}::{{closure}}::{{closure}}
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
