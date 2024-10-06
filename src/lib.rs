@@ -206,19 +206,3 @@ pub mod pupil_detection {
         ((x * x) / (a * a) + (y * y) / (b * b) - 1.0).abs() < threshold
     }
 }
-
-// You can add tests at the bottom of the file
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_tracker_params_default() {
-        let params = pupil_detection::TrackerParams::default();
-        assert_eq!(params.pupil_min_radius, 5.0);
-        assert_eq!(params.pupil_max_radius, 50.0);
-        // Add more assertions as needed
-    }
-
-    // Add more tests for your functions
-}

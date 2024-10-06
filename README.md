@@ -4,6 +4,7 @@
 
 This project implements a pupil detection algorithm using computer vision techniques in Rust. It utilizes the OpenCV library to process images and detect the pupil, fitting an ellipse to represent its shape.
 
+
 ## Features
 
 - Pupil detection in eye images
@@ -116,11 +117,34 @@ Contributions to improve the algorithm or extend its functionality are welcome. 
 - Implement multi-threading for faster processing
 - Add support for video input
 - Improve robustness for different lighting conditions
-- Implement a graphical user interface
+- Implement a graphical user interface (see TODO list)
+- Develop ML-based parameter optimization (see TODO list)
 
-## License
+## TODO List
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### GUI Development
+- [ ] Set up GTK-rs framework
+- [ ] Create main application window
+- [ ] Implement image loading functionality
+- [ ] Add controls for adjusting algorithm parameters
+- [ ] Display processed image with detected pupil
+- [ ] Show processing results and statistics
+- [ ] Implement real-time processing for video input
+
+### ML-based Parameter Optimization
+- [ ] Collect a dataset of diverse eye images
+- [ ] Define a metric for pupil detection accuracy
+- [ ] Implement a machine learning model (e.g., random forest, neural network) to predict optimal parameters
+- [ ] Train the model on the collected dataset
+- [ ] Integrate the ML model into the main application for automatic parameter selection
+- [ ] Implement a feedback mechanism to continuously improve the ML model
+
+### Other Tasks
+- [ ] Implement multi-threading for faster processing
+- [ ] Add support for video input
+- [ ] Improve robustness for different lighting conditions
+- [ ] Write comprehensive documentation
+- [ ] Develop more unit tests and integration tests
 
 ## Acknowledgments
 
