@@ -11,23 +11,42 @@ use std::time::Instant;
 /// Parameters for pupil tracking algorithm
 #[derive(Debug, Clone)]
 struct TrackerParams {
-    pupil_min_radius: f64,
-    pupil_max_radius: f64,
-    canny_threshold1: f64,
-    canny_threshold2: f64,
-    starburst_points: i32,
-    ransac_iterations: i32,
+    preprocess_blur_kernel_size: (i32, i32),  // Size of the Gaussian blur kernel for preprocessing
+    preprocess_blur_sigma: f64,               // Standard deviation for Gaussian blur
+    pupil_min_radius: f64,                    // Minimum expected pupil radius
+    pupil_max_radius: f64,                    // Maximum expected pupil radius
+    canny_threshold1: f64,                    // First threshold for Canny edge detection
+    canny_threshold2: f64,                    // Second threshold for Canny edge detection
+    starburst_points: i32,                    // Number of rays to use in starburst algorithm
+    ransac_iterations: i32,                   // Number of iterations for RANSAC ellipse fitting
+    threshold_value: f64,                     // Threshold value for binary image creation
+    threshold_max_value: f64,                 // Maximum value to use with thresholding
+    canny_aperture_size: i32,                 // Aperture size for Canny edge detection
+    ransac_inlier_threshold: f64,             // Distance threshold for RANSAC inliers
+    starburst_point_radius: i32,              // Radius of points drawn in starburst visualization
+    starburst_point_color: Scalar,            // Color of points in starburst visualization
+    output_ellipse_thickness: i32,            // Thickness of the final ellipse drawn
+    output_ellipse_color: Scalar,             // Color of the final ellipse drawn
 }
-
 impl Default for TrackerParams {
     fn default() -> Self {
         TrackerParams {
-            pupil_min_radius: 5.0,
-            pupil_max_radius: 50.0,
-            canny_threshold1: 30.0,
-            canny_threshold2: 100.0,
-            starburst_points: 20,
-            ransac_iterations: 100,
+            pupil_min_radius: 20.0,
+            pupil_max_radius: 100.0,
+            canny_threshold1: 0.0,
+            canny_threshold2: 255.0,
+            starburst_points: 1000,
+            ransac_iterations: 1000,
+            ransac_inlier_threshold: 2.0,
+            threshold_value: 75.0,
+            threshold_max_value: 255.0,
+            canny_aperture_size: 5,
+            preprocess_blur_kernel_size: (31, 31),
+            preprocess_blur_sigma: 0.0,
+            starburst_point_radius: 2,
+            starburst_point_color: Scalar::new(0.0, 255.0, 0.0, 0.0),
+            output_ellipse_thickness: 2,
+            output_ellipse_color: Scalar::new(0.0, 0.0, 255.0, 0.0),
         }
     }
 }
@@ -60,8 +79,8 @@ struct FindPupilEllipseOut {
 fn find_pupil_ellipse(image: &Mat, params: &TrackerParams) -> opencv::Result<FindPupilEllipseOut> {
     let start_time = Instant::now();
 
-    let gray = preprocess_image(image)?;
-    let binary = detect_pupil_region(&gray)?;
+    let gray = preprocess_image(image, &params)?;
+    let binary = detect_pupil_region(&gray, &params)?;
     let pupil_contour = find_largest_contour(&binary)?;
 
     if let Some(pupil_contour) = pupil_contour {
@@ -71,7 +90,7 @@ fn find_pupil_ellipse(image: &Mat, params: &TrackerParams) -> opencv::Result<Fin
         let (ellipse, _inliers) = ransac_ellipse_fit(&edge_points, params)?;
 
         Ok(FindPupilEllipseOut {
-            ellipse: Some(ellipse),
+            ellipse: ellipse,
             processing_time: start_time.elapsed().as_secs_f64(),
         })
     } else {
@@ -85,21 +104,37 @@ fn find_pupil_ellipse(image: &Mat, params: &TrackerParams) -> opencv::Result<Fin
 // Helper functions
 
 /// Preprocesses the input image
-fn preprocess_image(image: &Mat) -> opencv::Result<Mat> {
+fn preprocess_image(image: &Mat, params: &TrackerParams) -> opencv::Result<Mat> {
     let mut gray = Mat::default();
     imgproc::cvt_color(image, &mut gray, imgproc::COLOR_BGR2GRAY, 0)?;
+    imgcodecs::imwrite("images/step_1_grayscale.jpg", &gray, &Vector::new())?;
+
     let mut blurred = Mat::default();
-    imgproc::gaussian_blur(&gray, &mut blurred, Size::new(5, 5), 0.0, 0.0, opencv::core::BORDER_DEFAULT)?;
+    imgproc::gaussian_blur(
+        &gray,
+        &mut blurred,
+        Size::new(params.preprocess_blur_kernel_size.0, params.preprocess_blur_kernel_size.1),
+        params.preprocess_blur_sigma,
+        params.preprocess_blur_sigma,
+        opencv::core::BORDER_DEFAULT
+    )?;
+    imgcodecs::imwrite("images/step_1_blurred.jpg", &blurred, &Vector::new())?;
+
     Ok(blurred)
 }
 
 /// Detects the pupil region using thresholding
-fn detect_pupil_region(gray: &Mat) -> opencv::Result<Mat> {
+fn detect_pupil_region(gray: &Mat, params: &TrackerParams) -> opencv::Result<Mat> {
     let mut threshold = Mat::default();
-    imgproc::threshold(gray, &mut threshold, 0.0, 255.0, imgproc::THRESH_BINARY_INV | imgproc::THRESH_OTSU)?;
-    let mut binary = Mat::default();
-    threshold.convert_to(&mut binary, opencv::core::CV_8UC1, 1.0, 0.0)?;
-    Ok(binary)
+    imgproc::threshold(
+        gray,
+        &mut threshold,
+        params.threshold_value,
+        params.threshold_max_value,
+        imgproc::THRESH_BINARY_INV
+    )?;
+    imgcodecs::imwrite("images/step_2_threshold.jpg", &threshold, &Vector::new())?;
+    Ok(threshold)
 }
 
 /// Finds the largest contour in the binary image
@@ -117,49 +152,76 @@ fn detect_edges(gray: &Mat, params: &TrackerParams) -> opencv::Result<Mat> {
         &mut edges,
         params.canny_threshold1,
         params.canny_threshold2,
-        3,
+        params.canny_aperture_size,
         false,
     )?;
+    imgcodecs::imwrite("images/step_4_edges.jpg", &edges, &Vector::new())?;
     Ok(edges)
 }
 
 /// Performs starburst edge detection
-fn starburst_edge_detection(edges: &Mat, roi: &opencv::core::Rect, params: &TrackerParams) -> opencv::Result<Vec<EdgePoint>> {
+fn starburst_edge_detection(gray: &Mat, roi: &opencv::core::Rect, params: &TrackerParams) -> opencv::Result<Vec<EdgePoint>> {
+    let mut edges = Mat::default();
+    imgproc::canny(
+        gray,
+        &mut edges,
+        params.canny_threshold1,
+        params.canny_threshold2,
+        params.canny_aperture_size,
+        false,
+    )?;
+
     let mut edge_points = Vec::new();
-    let center = Point2f::new(
-        (roi.x + roi.width / 2) as f32,
-        (roi.y + roi.height / 2) as f32,
-    );
+    let center = Point2f::new((roi.x + roi.width / 2) as f32, (roi.y + roi.height / 2) as f32);
+
+    let mut output = Mat::default();
+    imgproc::cvt_color(&edges, &mut output, imgproc::COLOR_GRAY2BGR, 0)?;
 
     for i in 0..params.starburst_points {
         let angle = 2.0 * std::f32::consts::PI * (i as f32) / (params.starburst_points as f32);
-        let mut r = params.pupil_min_radius as f32;
-        while r < params.pupil_max_radius as f32 {
-            let x = (center.x + r * angle.cos()) as i32;
-            let y = (center.y + r * angle.sin()) as i32;
-
-            if x >= 0 && x < edges.cols() && y >= 0 && y < edges.rows() {
-                if *edges.at_2d::<u8>(y, x)? == 255 {
-                    edge_points.push(EdgePoint {
-                        point: Point2f::new(x as f32, y as f32),
-                    });
-                    break;
-                }
-            } else {
-                break;
-            }
-            r += 1.0;
+        if let Some(edge_point) = find_edge_point(&edges, center, angle, params) {
+            edge_points.push(edge_point.clone()); // Clone the EdgePoint before pushing
+            draw_starburst_point(&mut output, edge_point.point, params)?;
         }
     }
 
+    imgcodecs::imwrite("images/step_5_starburst_points.jpg", &output, &Vector::new())?;
     Ok(edge_points)
+}
+
+fn find_edge_point(edges: &Mat, center: Point2f, angle: f32, params: &TrackerParams) -> Option<EdgePoint> {
+    let mut radius = params.pupil_min_radius as f32;
+    while radius < params.pupil_max_radius as f32 {
+        let x = (center.x + radius * angle.cos()) as i32;
+        let y = (center.y + radius * angle.sin()) as i32;
+
+        if x >= 0 && x < edges.cols() && y >= 0 && y < edges.rows() {
+            if *edges.at_2d::<u8>(y, x).ok()? == 255 {
+                return Some(EdgePoint { point: Point2f::new(x as f32, y as f32) });
+            }
+        }
+        radius += 1.0;
+    }
+    None
+}
+
+fn draw_starburst_point(output: &mut Mat, point: Point2f, params: &TrackerParams) -> opencv::Result<()> {
+    imgproc::circle(
+        output,
+        Point::new(point.x as i32, point.y as i32),
+        params.starburst_point_radius,
+        params.starburst_point_color,
+        -1,
+        imgproc::LINE_AA,
+        0,
+    )
 }
 
 /// Fits an ellipse to the edge points using RANSAC
 fn ransac_ellipse_fit(
     edge_points: &[EdgePoint],
     params: &TrackerParams,
-) -> opencv::Result<((Point2f, Size2f, f32), Vec<EdgePoint>)> {
+) -> opencv::Result<(Option<(Point2f, Size2f, f32)>, Vec<EdgePoint>)> {
     let mut rng = rand::thread_rng();
     let mut best_ellipse = None;
     let mut best_inliers = Vec::new();
@@ -177,20 +239,18 @@ fn ransac_ellipse_fit(
         if let Ok(ellipse) = imgproc::fit_ellipse(&sample_vector) {
             let inliers: Vec<EdgePoint> = edge_points
                 .iter()
-                .filter(|ep| is_inlier(&ep.point, &(ellipse.center, ellipse.size, ellipse.angle), 2.0))
+                .filter(|ep| is_inlier(&ep.point, &(ellipse.center, ellipse.size, ellipse.angle), params.ransac_inlier_threshold))
                 .cloned()
                 .collect();
 
             if inliers.len() > best_inliers.len() {
-                best_ellipse = Some(ellipse);
+                best_ellipse = Some((ellipse.center, ellipse.size, ellipse.angle));
                 best_inliers = inliers;
             }
         }
     }
 
-    best_ellipse
-        .map(|e| ((e.center, e.size, e.angle), best_inliers))
-        .ok_or_else(|| opencv::Error::new(0, "Failed to fit ellipse".to_string()))
+    Ok((best_ellipse, best_inliers))
 }
 
 /// Checks if a point is an inlier for the given ellipse
@@ -213,7 +273,7 @@ fn is_inlier(point: &Point2f, ellipse: &(Point2f, Size2f, f32), threshold: f64) 
 
 fn main() -> opencv::Result<()> {
     println!("Starting pupil detection");
-    let image = imgcodecs::imread("eye.jpg", imgcodecs::IMREAD_COLOR)?;
+    let image = imgcodecs::imread("images/eye.jpg", imgcodecs::IMREAD_COLOR)?;
     if image.empty() {
         return Err(opencv::Error::new(0, "Failed to read image file 'eye.jpg'".to_string()));
     }
@@ -223,25 +283,24 @@ fn main() -> opencv::Result<()> {
     println!("Using default tracker parameters: {:?}", params);
 
     let result = find_pupil_ellipse(&image, &params)?;
-
     if let Some(ellipse) = result.ellipse {
         let mut output = image.clone();
         let (center, size, angle) = ellipse;
         imgproc::ellipse(
             &mut output,
             Point::new(center.x as i32, center.y as i32),
-            Size::new(size.width as i32, size.height as i32),
+            Size::new(size.width as i32 / 2, size.height as i32 / 2),
             angle as f64,
             0.0,
             360.0,
-            Scalar::new(0.0, 0.0, 255.0, 0.0),
-            2,
+            params.output_ellipse_color,
+            params.output_ellipse_thickness,
             imgproc::LINE_AA,
             0
         )?;
 
-        imgcodecs::imwrite("output.jpg", &output, &Vector::new())?;
-        println!("Pupil detected. Output saved as 'output.jpg'");
+        imgcodecs::imwrite("images/step_6_output.jpg", &output, &Vector::new())?;
+        println!("Pupil detected. Output saved as 'images/step_6_output.jpg'");
         println!("Processing time: {:.2} ms", result.processing_time * 1000.0);
     } else {
         println!("No pupil detected.");
